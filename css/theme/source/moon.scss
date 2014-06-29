@@ -56,13 +56,19 @@ $green:     #859900;
 $mainColor: $base1;
 $headingColor: $base2;
 $headingTextShadow: none;
-$backgroundColor: $base03;
+$backgroundColor: #6DBBDE;
 $linkColor: $blue;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $magenta;
+
+$darkFont: #383D3D;
 
 
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal .light {
+	color: $darkFont;
+}
