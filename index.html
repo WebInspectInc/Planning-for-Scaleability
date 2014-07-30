@@ -40,9 +40,25 @@
 			<div class="slides">
 
 				<section>
+					<section>
+						<h1>Planning for Scale</h1>
+						<h2>A Web Developer’s Guide to Thinking Small and Planning Big</h2>
+					</section>
+
+					<section>
+						<h1>Who am I?</h1>
+					</section>
+
+					<section data-background="img/myhub.png"></section>
+
+					<section>
+						<h1>Who are you?</h1>
+					</section>
+				</section>
+
+				<section>
 					<section data-background="img/acrylic.jpg">
 						<h1>The acrylic days of the web</h1>
-						<p class="fragment">Or maybe, more correctly...</p>
 					</section>
 
 					<section data-background="img/spraypaint.jpg">
@@ -136,7 +152,7 @@
 						<p>If you're growing 12% per month, you'll double your users in roughly 6 months (72/12)</p>
 					</section>
 
-					<section data-background="img/why/polarbeardoor.jpg"></section>
+					<section data-background="img/why/polarbeardoor.jpg" data-background-position="bottom"></section>
 
 					<section>
 						<h1>Doubling every six months is a big deal</h1>
@@ -193,8 +209,8 @@
 						<h1>Our Roadmap</h1>
 						<ol>
 							<li class="fragment">Estimation</li>
-							<li class="fragment">Teamwork</li>
 							<li class="fragment">Development</li>
+							<li class="fragment">Teamwork</li>
 						</ol>
 						<p class="fragment">Seems simple, right?</p>
 					</section>
@@ -249,7 +265,25 @@
 
 					<section>
 						<h1>How good are you at estimation?</h1>
-						<p>(page 2)
+					</section>
+
+					<section>
+						<h1>Pop Quiz:</h1>
+						<ul>
+							<li class="fragment">Surface temperature of the Sun</li>
+							<li class="fragment">Latitude of Shanghai</li>
+							<li class="fragment">Area of the Asian continent</li>
+							<li class="fragment">The year of Alexander the Great’s birth</li>
+							<li class="fragment">Total value of U.S. currency in circulation in 2004</li>
+							<li class="fragment">Total volume of the Great Lakes</li>
+							<li class="fragment">Worldwide box office receipts for the movie <em>Titanic</em></li>
+							<li class="fragment">Total length of the coastline of the Pacific Ocean</li>
+							<li class="fragment">Number of book titles published in the U.S. since 1776</li>
+							<li class="fragment">Heaviest blue whale ever recorded</li>
+						</ul>
+						<footer>
+							This quiz is from <em>Software Estimation</em> by Steve McConnell, and is © 2006 Steve McConnell
+						</footer>
 					</section>
 
 					<section>
@@ -268,76 +302,87 @@
 						</ul>
 					</section>
 
+					<section>
+						<h1>How’d you do?</h1>
+						<p class="fragment">(don’t worry, I only got one right when I took it)</p>
+					</section>
+
+					<section>
+						<h1>Estimation is hard</h1>
+						<p>And most people fail because they don’t allow enough flexibility</p>
+					</section>
+
+					<section>
+						<h1>A simple formula:</h1>
+						<h1 class="fragment">Estimation × π</h1>
+					</section>
+
+					<section>
+						<h2>Believe it or not,</h2>
+						<h1>It's quite accurate</h1>
+					</section>
+
+					<section>
+						<h2>There’s a lot more behind estimation</h2>
+						<p>I highly recommend “Software Estimation” by Steve McConnell</p>
+					</section>
+
+					<section data-background="img/madesimple.jpg" data-background-position="bottom"></section>
+
 				</section>
 
-
 				<section>
-					<section data-background="#F9F9F7">
-						<img src="img/yoman.png"/>
-					</section>
-
-					<section data-background="#6DBBDE">
-						<h1>Yo, Yoman!</h1>
+					<section>
+						<h1>Development</h1>
 					</section>
 
 					<section>
-						<h1>Three modern front-end tools:</h1>
-						<img src="img/tools.png"/>
+						<h1>1. Managing your codebase</h1>
 					</section>
 
 					<section>
-						<h2>...and conventions on how to use them</h2>
-					</section>
-
-					<section data-background="img/myhub.png"></section>
-
-					<section data-background="img/jumping.gif"><h1>Before we jump in</h1></section>
-
-					<section>
-						<h2>Front end development has grown up. We have a core set of practices that we try to follow.</h2>
-					</section>
-
-					<section>
-						<h1>While developing, we</h1>
-					</section>
-
-					<section class="light" data-background="#EEE8D5">
-						<ul>
-							<li>Work locally<br>(run a local server, don’t FTP up changes</li>
-							<li>Organize our code into distinct parts</li>
-							<li>Use preprocessors (they make life a lot easier)</li>
-							<li>Livereload your files during development<br>(save precious seconds that we could be developing)</li>
-							<li>Version control your source files<br>(seriously, this is a big deal)</li>
-							<li>Lint our code</li>
-						</ul>
-					</section>
-
-					<section>
-						<h1>Before deploying, we</h1>
-					</section>
-
-					<section class="light" data-background="#EEE8D5">
-						<ul>
-							<li>Minify all the things!</li>
-							<li>Concatenate all the things!</li>
-							<li>Set assets to far-future cache and bust the user’s cache only when they change</li>
-							<li>Run tests. Run tests. And run tests again</li>
-						</ul>
-					</section>
-
-					<section>
-						<h1>An average front-end workflow</h1>
+						<h2>As a developer, your code is your most important asset</h2>
 					</section>
 
 					<section data-background="img/workflow.gif"></section>
 
-					<section><h1>Time for a live code demo</h1></section>
-
 					<section>
-						<h1>Was it successful?</h1>
+						<h2>#1 tip for a healthy codebase:</h2>
+						<h1 class="fragment">Use version control</h1>
 					</section>
 
-					<section data-background="img/highfive.gif"></section>
+					<section>
+						<p>Version control stores every change you make to your codebase.</p>
+						<p>If you (or someone else) changes something bad, it’s almost painless, because you can just revert back to the original.</p>
+					</section>
+
+					<section>
+						<h2>A simple tutorial on Git?</h2>
+					</section>
+
+					<section>
+						<h2>#2 tip for a healthy codebase:</h2>
+						<h1 class="fragment">Have Standards. Stick to them.</h1>
+					</section>
+
+					<section>
+						<h2>What the standards are isn't as vital.</h2>
+					</section>
+
+					<section>
+						<h2>Tip #3:</h2>
+						<h1 class="fragment">Lint your code</h1>
+					</section>
+
+					<section>
+						<h2>Linting catches small bugs, and also enforces your code standards.</h2>
+						<h2 class="fragment">And what good are your standards if they aren't enforced?</h2>
+					</section>
+
+					<section>
+						<h2>Bonus points:</h2>
+						<h1 class="fragment">Code review</h1>
+					</section>
 				</section>
 
 			</div>
