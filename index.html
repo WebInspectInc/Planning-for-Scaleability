@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -156,7 +156,7 @@
 
 					<section>
 						<h1>Doubling every six months is a big deal</h1>
-						<h2>And is extremely stressful</h2>
+						<h2>And it’s extremely stressful</h2>
 					</section>
 
 					<section>
@@ -181,11 +181,11 @@
 					<section>
 						<h2>You will constantly struggle with</h2>
 						<ul>
-							<li class="fragment">Adding features</li>
-							<li class="fragment">Feature creep</li>
+							<li class="fragment">Adding features quickly</li>
+							<li class="fragment">Scope creep</li>
 							<li class="fragment">Adding the right features (user research)</li>
-							<li class="fragment">Adding features correctly, so you can add more features later</li>
-							<li class="fragment">Maintaining existing features</li>
+							<li class="fragment">Keeping pages lean and performant</li>
+							<li class="fragment">Maintaining existing codebase (fixing things that break)</li>
 						</ul>
 					</section>
 
@@ -193,26 +193,15 @@
 						<h1>Not to mention</h1>
 						<ul>
 							<li class="fragment">Keeping your servers running</li>
-							<li class="fragment">Maintaining a clean codebase</li>
 							<li class="fragment">Coordinating a team</li>
 							<li class="fragment">Shipping</li>
 						</ul>
 					</section>
 
 					<section>
-						<h1>This talk is about all of those things</h1>
+						<h1>Today we’re going to learn how to do all those things.</h1>
 						<p>...except managing your servers. You're on your own for that one.</p>
 						<p class="fragment">Oh, and lawyers. Definitely not talking about that.</p>
-					</section>
-
-					<section>
-						<h1>Our Roadmap</h1>
-						<ol>
-							<li class="fragment">Estimation</li>
-							<li class="fragment">Development</li>
-							<li class="fragment">Teamwork</li>
-						</ol>
-						<p class="fragment">Seems simple, right?</p>
 					</section>
 
 					<aside class="notes">
@@ -223,117 +212,7 @@
 
 				<section>
 					<section>
-						<h1>Estimation</h1>
-						<h2 class="fragment">What is estimation?</h2>
-					</section>
-					<section>
-						<h2>Heisenberg’s Uncertainty Principle</h2>
-					</section>
-					<section>
-						<blockquote>It is very difficult to make a vigorous, plausible, and job-risking defense of an estimate that is derived by no quantitative method, supported by little data, and certified chiefly by the hunches of the managers.</blockquote>
-						<p>Fred Brooks</p>
-					</section>
-
-					<section>
-						<h2>Estimation, according to a dictionary:</h2>
-						<ol>
-							<li class="fragment">A tenative evaluation or rough calculation</li>
-							<li class="fragment">A preliminary calculation of the cost of a project</li>
-							<li class="fragment">A judgement based on one’s impressions; opinion</li>
-						</ol>
-					</section>
-
-					<section>
-						<h2>Important distinctions</h2>
-						<ul>
-							<li>Estimates</li>
-							<li>Targets</li>
-							<li>Commitments</li>
-							<li>Plans</li>
-						</ul>
-					</section>
-
-					<section>
-						<h1>A working definition of a “Good Estimate”</h1>
-					</section>
-
-					<section>
-						<blockquote>A good estimate is an estimate that provides a clear enough view of the project reality to allow the project leadership to make good decisions about how to control the project to hit its targets.</blockquote>
-						<p>Steve McConnell</p>
-						<p class="fragment">(<em>Software Estimation</em>, © 2006)</p>
-					</section>
-
-					<section>
-						<h1>How good are you at estimation?</h1>
-					</section>
-
-					<section>
-						<h1>Pop Quiz:</h1>
-						<ul>
-							<li class="fragment">Surface temperature of the Sun</li>
-							<li class="fragment">Latitude of Shanghai</li>
-							<li class="fragment">Area of the Asian continent</li>
-							<li class="fragment">The year of Alexander the Great’s birth</li>
-							<li class="fragment">Total value of U.S. currency in circulation in 2004</li>
-							<li class="fragment">Total volume of the Great Lakes</li>
-							<li class="fragment">Worldwide box office receipts for the movie <em>Titanic</em></li>
-							<li class="fragment">Total length of the coastline of the Pacific Ocean</li>
-							<li class="fragment">Number of book titles published in the U.S. since 1776</li>
-							<li class="fragment">Heaviest blue whale ever recorded</li>
-						</ul>
-						<footer>
-							This quiz is from <em>Software Estimation</em> by Steve McConnell, and is © 2006 Steve McConnell
-						</footer>
-					</section>
-
-					<section>
-						<h2>The answers to the quiz:</h2>
-						<ul>
-							<li class="fragment">10,000°F</li>
-							<li class="fragment">31 degrees North</li>
-							<li class="fragment">17,139,000 square miles</li>
-							<li class="fragment">356 BC</li>
-							<li class="fragment">$719.9 billion</li>
-							<li class="fragment">5,500 cubic miles</li>
-							<li class="fragment">$1.835 billion</li>
-							<li class="fragment">84,300 miles</li>
-							<li class="fragment">22 million</li>
-							<li class="fragment">380,000 pounds</li>
-						</ul>
-					</section>
-
-					<section>
-						<h1>How’d you do?</h1>
-						<p class="fragment">(don’t worry, I only got one right when I took it)</p>
-					</section>
-
-					<section>
-						<h1>Estimation is hard</h1>
-						<p>And most people fail because they don’t allow enough flexibility</p>
-					</section>
-
-					<section>
-						<h1>A simple formula:</h1>
-						<h1 class="fragment">Estimation × π</h1>
-					</section>
-
-					<section>
-						<h2>Believe it or not,</h2>
-						<h1>It's quite accurate</h1>
-					</section>
-
-					<section>
-						<h2>There’s a lot more behind estimation</h2>
-						<p>I highly recommend “Software Estimation” by Steve McConnell</p>
-					</section>
-
-					<section data-background="img/madesimple.jpg" data-background-position="bottom"></section>
-
-				</section>
-
-				<section>
-					<section>
-						<h1>Development</h1>
+						<h1>On to the code!</h1>
 					</section>
 
 					<section>
@@ -353,7 +232,7 @@
 
 					<section>
 						<p>Version control stores every change you make to your codebase.</p>
-						<p>If you (or someone else) changes something bad, it’s almost painless, because you can just revert back to the original.</p>
+						<p>If you (or someone else) changes something bad, it’s almost painless, because you can just jump back to the original.</p>
 					</section>
 
 					<section>
@@ -367,6 +246,7 @@
 
 					<section>
 						<h2>What the standards are isn't as vital.</h2>
+						<p>You can just search for "Ruby Coding Standards" and season to taste</p>
 					</section>
 
 					<section>
@@ -376,7 +256,7 @@
 
 					<section>
 						<h2>Linting catches small bugs, and also enforces your code standards.</h2>
-						<h2 class="fragment">And what good are your standards if they aren't enforced?</h2>
+						<p class="fragment">And what good are your standards if they aren't enforced?</p>
 					</section>
 
 					<section>

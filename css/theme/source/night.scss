@@ -12,12 +12,46 @@
 
 
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(https://themes.googleusercontent.com/static/fonts/montserrat/v4/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #111;
+$backgroundColor: #2C1E1E;
+
+$green: #235D23;
+$light-green: #C6D5B0;
+$yellow: #DFFF6D;
+$maroon: #32382C;
 
 $mainFont: 'Open Sans', sans-serif;
 $linkColor: #e7ad52;
@@ -33,3 +67,96 @@ $mainFontSize: 30px;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.light {
+	h1, h2, h3, h4, p {
+		color: $maroon;
+	}
+}
+
+.reveal {
+
+	.dark {
+		h1, h2, h3, p {
+			color: $backgroundColor;
+		}
+	}
+
+	pre {
+		font-size: 1.5em;
+		padding: 1em;
+	}
+
+	.codeflex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.fifty {
+		flex-grow: 1;
+		margin: 32px 16px;
+		&:first-of-type {
+			margin-left: 0;
+		}
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.h1, .h2, .h3, .h4, .h5 {
+		-webkit-hyphens: manual;
+		-moz-hyphens: manual;
+		hyphens: manual;
+
+		word-wrap: normal;
+	}
+
+}
+
+.perfect-centering {
+	display: flex;
+	align-items: center;
+	height: 400px;
+	width: 100%;
+	background: $green;
+	span {
+		margin: auto;
+	}
+}
+
+.flex {
+	background: $backgroundColor;
+	padding: 8px;
+	height: 80px;
+}
+
+[class*='flex--'] {
+	display: flex;
+}
+
+.flex span {
+	display: block;
+	background: $yellow;
+	height: 100%;
+	transition: flex-grow 100ms ease-in-out;
+	&:first-of-type {
+		background: $maroon;
+	}
+	&:nth-child(3) {
+		background: $light-green;
+	}
+}
+
+.editable-code, code > pre {
+	display: block;
+	background: #333;
+	padding: 0 40px;
+	white-space: pre;
+	text-align: left;
+	overflow: auto;
+	max-height: 500px;
+}
+
+.two.child-four {
+	background: #32382C;
+}
